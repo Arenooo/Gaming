@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
 		FollowTarget();
 	}
 
-	void FollowTarget()
+	private void FollowTarget()
 	{
 		transform.position = new Vector3(_target.position.x, transform.position.y, _target.position.z);
 	}

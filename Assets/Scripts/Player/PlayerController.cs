@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 		MovePlayer();
 	}
 
-	void MovePlayer()
+	private void MovePlayer()
 	{
 		_playersRigidBody.velocity = new Vector3(_runSpeed * Input.GetAxisRaw("Horizontal"), _playersRigidBody.velocity.y);
 		_playersRigidBody.velocity = new Vector3(_playersRigidBody.velocity.x, _playersRigidBody.velocity.y, _runSpeed * Input.GetAxisRaw("Vertical"));
