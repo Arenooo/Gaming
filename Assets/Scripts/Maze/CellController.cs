@@ -5,11 +5,10 @@ using UnityEngine;
 public class CellController : MonoBehaviour
 {
     [SerializeField] private List<WallController> _walls;
-
+    
     public void ToggleWall(bool state, Wall wall)
     {
         _walls[(int) wall].Toggle(state);
-        Debug.Log("toggling " + wall);
     }
 }
 
